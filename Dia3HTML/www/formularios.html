@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios en HTML</h1>
+    </header>
+
+    <form action="." method="get">
+       Username <input type="text" name="Username" autofocus>
+       Password <input type="text" name="Password">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="." method="post">
+            Username <input type="text" name="username">
+            Password <input type="password" name="password">
+             <button type="submit">Enviar</button>
+         </form>
+
+    <form action="." method="get">
+        Nombre: <input type="text" name="nombre" value="Nicolás" readonly>
+        Apellidos: <input type="text" name="apellidos" value="Méndez" disabled>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="." method="get">
+            Nombre: <input type="text" name="nombre">
+            Apellidos: <input type="text" name="apellidos" placeholder="poner los 2">
+            <button type="submit">Enviar</button>
+        </form>
+
+
+    <form action="." method="get">
+            <fieldset>
+            <legend>Datos personales</legend>
+                <ul>
+                    <li>
+                            <label for="nombre">Nombre:</label>
+                            <input id="nombre" name="nombre" type="text" required>
+                        </li>
+                    <li>
+                            <label for="password">Contraseña</label>
+                            <input id="password" name="password" type="password">
+                        </li>
+                    <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email">
+                        </li>
+                    <li>
+                            <label for="web">Página web</label>
+                            <input id="web" name="web" type="url">
+                        </li>
+                    <li>
+                            <label for="birth">Fecha de nacimiento</label>
+                            <input id="birth" name="birth" type="date" min="2001-09-04" max="2019-12-31">
+                        </li>
+                    <li>
+                            <label for="birthday">Fecha de nacimiento</label>
+                            <input id="birthday" name="birthday" type="week">
+                        </li>
+                    <li>
+                            <label for="photo">Foto</label>
+                            <input id="photo" name="photo" type="file">
+                        </li>
+                    <li>
+                            <label for="color">Color</label>
+                            <input id="color" name="color" type="color">
+                        </li>
+                    <li>
+                            <label for="range">Rango</label>
+                            <input id="range" name="range" type="range">
+                        </li>
+                    <li>
+                        <label for="provincia">Provincia</label>
+
+                        <select name="provincia" id="provincia">
+                            <optgroup label="Provincias guays">
+                                <option value="CO">A Coruña</option>
+                                <option>Lugo</option>
+                            </optgroup>
+                            <optgroup label="Provincias menos guays"> 
+                                <option>Ourense</option>
+                                <option>Pontevedra</option>
+                            </optgroup>  
+
+                        </select>
+
+                    <li> 
+                        <label for="ciudad">Ciudad</label>
+
+                        <select name="ciudad" id="ciudad" multiple>
+                            
+                                <option>Vigo</option>
+                                <option>Ferrol</option> 
+                                <option>Coruña</option>
+                                <option>Viveiro</option>
+                        </select>
+                    </li>
+                                  
+                    
+                    </ul>
+
+            </fieldset>
+
+            <fieldset>
+
+            <legend>Biografía</legend>
+            <textarea name="bio" id="bio" maxlength="280" minlength="10"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+
+                <ul>
+                    <li>Te gustan los pimientos</li>
+                    <label for="si">Sí</label>
+                    <input id="si" name="pimientos" type="radio" checked>
+                    <label for="no">No</label>
+                    <input id="no" name="pimientos" type="radio">
+                    <label for="aveces">A veces</label>
+                    <input id="aveces" name="pimientos" type="radio">
+                </ul>
+
+                <li>
+                    <label for="newsletter">Recibir Newsletter</label>
+                    <input id="newsletter" name="newsletter" type="checkbox" value="true">
+                </li>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar formulario</button>
+            
+    </form>
+    <button>Nada (hace nada)</button>
+</body>
+    
+    <nav><a href="/">Volver a portada</a></nav>
+
+</html>
